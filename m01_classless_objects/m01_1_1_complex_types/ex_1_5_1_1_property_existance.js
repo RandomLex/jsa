@@ -11,8 +11,11 @@ console.log(contact.email);             // just 'undefined' => no problem
 
 // better approach is
 
-contact && contact.email && console.log(contact.email.private);   // again 'undefined'
-
+// contact && contact.email && console.log(contact.email.private);   // again 'undefined'
+// non-compliant. it is better to use
+if (contact?.email) {
+  console.log(contact.email.private);     // again undefined
+}
 //also it is possible to use 'in'
 
 if ('notes' in contact) {
