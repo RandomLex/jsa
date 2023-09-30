@@ -24,12 +24,13 @@ function deepComparison(a, b) {
 }
 
 function deepComparisonOptimized(a, b) {
+  let acc = true;
   for (const key in a) {
     if (typeof a[key] === 'object' && typeof a[key] === typeof b[key]) {
       if (!deepComparisonOptimized(a[key], b[key])) return false;
     } else if (a[key] !== b[key]) return false;
   }
-  return true;
+  return acc ;
 }
 
 
