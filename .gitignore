@@ -1,1 +1,3 @@
 /.idea/
+**/sonar.bat
+**/.scannerwork/

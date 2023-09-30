@@ -3,7 +3,7 @@ let a = {
     delay: 20,              // duplicate declaration. Will be overwritten by last delay
     name: 'en to tre',
     isPresent: true,
-    delay: 50
+    // delay: 50
 };
 
 a.delay = a.delay * 2;
