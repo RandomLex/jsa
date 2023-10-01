@@ -1,0 +1,7 @@
+{
+  "name": "m02_labs",
+  "version": "1.0.0",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
